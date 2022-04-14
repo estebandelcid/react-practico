@@ -33,16 +33,26 @@ if (!searchValue.length >= 1) {
   });
 }
 
-const completeTodos = (text) => {
-  const todoIndex = todos.findIndex(todo => todo.text == text);
+const completeTodo = (text) => {
+  const todoIndex = todos.findIndex(todo => todo.text === text);
   
-  todos[todoIndex].completed =true;
+  const newTodos = [...todos];
+  newTodos[todoIndex].completed =true;
+  setTodos(newTodos);
 
   //todos[todoIndex] = {
     //text: todos[todoIndex].text,
     //completed: true,
   //};
-}
+};
+
+const deleteTodo = (text) => {
+  const todoIndex = todos.findIndex(todo => todo.text === text);
+  
+  const newTodos = [...todos];
+  newTodos.splice(todoIndex, 1);
+  setTodos(newTodos);
+};
 
 
   return (
@@ -62,6 +72,9 @@ const completeTodos = (text) => {
         key={todo.text} 
         text={todo.text}
         completed={todo.completed}
+        onComplete={() => completeTodo(todo.text)}
+        onDelete={() => deleteTodo(todo.text)}
+
         />
       ))}
     </TodoList>
