@@ -12,7 +12,8 @@ function TodoProvider(props) {
       } = useLocalStorage('TODOS_V1', []);
       
       const [searchValue, setSearchValue] = React.useState('');
-      
+      const [openModal, setOpenModal] = React.useState(false);
+
       const completedTodos = todos.filter(todo => !!todo.completed).length;
       const totalTodos = todos.length;
       
@@ -55,7 +56,7 @@ function TodoProvider(props) {
       
       React.useEffect(() => {
         console.log('use effect');
-      }, [totalTodos]);
+      }, totalTodos);
       
       console.log('Render (luego del useeffect)');
     
@@ -70,6 +71,8 @@ function TodoProvider(props) {
             searchedTodos,
             completeTodo,
             deleteTodo,
+            openModal,
+            setOpenModal,
         }}>
             {props.children}
             </TodoContext.Provider>
