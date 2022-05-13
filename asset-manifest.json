@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-practico/static/css/main.38498c96.css",
+    "main.js": "/react-practico/static/js/main.db21d630.js",
+    "index.html": "/react-practico/index.html",
+    "static/media/delete48.svg": "/react-practico/static/media/delete48.2b385a415776d1fe3a5edd93c9b4dce0.svg",
+    "static/media/done48.svg": "/react-practico/static/media/done48.983207f640fb42a9d85918c946dba28c.svg",
+    "main.38498c96.css.map": "/react-practico/static/css/main.38498c96.css.map",
+    "main.db21d630.js.map": "/react-practico/static/js/main.db21d630.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38498c96.css",
+    "static/js/main.db21d630.js"
+  ]
+}
