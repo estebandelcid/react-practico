@@ -19,7 +19,7 @@
 .TodoItem-p--completed {
     text-decoration: line-through;
 }
-.Icon {
+/* .Icon {
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -29,12 +29,12 @@
     font-size: 24px;
     font-weight: bold;
 
-}
-.Icon-check {
+} */
+/* .Icon-check {
     position: absolute;
     left: 8px;
-}
-.Icon-check--active {
+}  */
+/* .Icon-check--active {
     color: #4caf50;
 }
 .Icon-deleted {
@@ -44,4 +44,4 @@
 }
 .Icon-delete:hover {
     color: red;
-}
+} */
